@@ -1,0 +1,47 @@
+html
+{
+    font: {
+        family: $base-font;
+        size: 1rem;
+    }
+
+    line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        family: $heading-font;
+    }
+
+    line-height: $heading-line-height;
+}
+
+h1, h2, h3, h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: bold;
+}
+  
+h1 {
+    font-size: 3.998rem;
+}
+
+h2 {
+    font-size: 2.827rem;
+}
+
+
+h3 {
+    font-size: 1.999rem;
+}
+
+h4 {
+    font-size: 1.414rem;
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+.container {
+    max-width: $container-width;
+}
