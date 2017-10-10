@@ -1,9 +1,16 @@
+*
+{
+    box-sizing: border-box;
+}
+
 html
 {
     font: {
         family: $base-font;
         size: 1rem;
     }
+
+    color: $color-font;
 
     line-height: $base-line-height;
 }
@@ -39,9 +46,58 @@ h4 {
 }
 
 p {
+    margin-top: 0;
     margin-bottom: 1.3rem;
+
+    &.large
+    {
+        @extend p;
+        font-size: 1.25rem;
+    }
+
+    &.subhead
+    {
+        margin-top: -0.75rem;
+    }
+}
+
+a
+{
+    color: $color-blue-light;
+    transition: .3s color;
+
+    &:hover
+    {
+        color: $color-blue-dark;
+    }
+}
+
+main
+{
+    margin-top: $header-height;
 }
 
 .container {
     max-width: $container-width;
+    margin: 0 auto;
+    padding: 1.25rem;
+
+    &--narrow
+    {
+        @extend .container;
+        max-width: $container-width-narrow;
+    }
+}
+
+.fa
+{
+    margin-right: 0.5rem;
+}
+
+@media all and(min-width: $breakpoint-tablet)
+{
+    main
+    {
+        margin-top: $header-height-tablet;
+    }
 }

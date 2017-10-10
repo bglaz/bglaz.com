@@ -2,14 +2,25 @@
 // Colors
 $color-white: #ffffff;
 $color-black: #000000;
+$color-gray: #888888;
+$color-font: #333333;
+$color-blue-light: #3498db;
+$color-blue-dark: navy;
 
 // Fonts
 $base-font: 'Open Sans', serif;
 $base-line-height: 1.8;
 
-$heading-font: 'Rubik', sans-serif;
+$heading-font: 'Merriweather', sans-serif;
 $heading-line-height: 1.2;
 
 
 // Layout
 $container-width: 1440px;
+$container-width-narrow: 1280px;
+
+$header-height: 77px;
+$header-height-tablet: 78px;
+
+// Breakpoints
+$breakpoint-tablet: 640px;
