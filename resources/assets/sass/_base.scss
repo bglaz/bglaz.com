@@ -82,6 +82,12 @@ main
     margin: 0 auto;
     padding: 1.25rem;
 
+    &--full-width
+    {
+        @extend .container;
+        max-width: none;
+    }
+
     &--narrow
     {
         @extend .container;

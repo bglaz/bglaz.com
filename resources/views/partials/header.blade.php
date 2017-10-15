@@ -1,5 +1,5 @@
 <header>
-    <div class="container">
+    <div class="container--full-width">
         <span class="tagline"><a href="/">&lt;BGlaz.com&gt;</a></span>
         <nav>
             <ul id="menu">

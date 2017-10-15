@@ -1,13 +1,14 @@
 header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
 
     background-color: white;
     border-bottom: 1px solid $color-gray;
     box-shadow: 0px 3px 100px 1px rgba(0, 0, 0, 0.3);
 
-    > .container
+    > .container--full-width
     {
         display: flex;
         justify-content: space-between;
