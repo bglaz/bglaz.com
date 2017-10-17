@@ -4,19 +4,61 @@
     border-radius: .25rem;
 
     margin-bottom: 3rem;
+    padding: .75rem;
 
-    .content
+    .project-thumb
     {
-        padding: .75rem;
-    }
+        position: relative;
 
-    .title
-    {
-        margin-top: 0;
+        img
+        {
+            display: block;
+        }
+
+       .project-thumb-hover
+       {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0,0,0,0.5);
+           opacity: 0;
+
+           transition: opacity .3s;
+       }
+
+       &:hover
+       {
+           .project-thumb-hover
+           {
+               opacity: 1;
+           }
+       }
     }
 
     .description
     {
         margin: 0 0 1.5rem 0;
+    }
+}
+
+@media all and(min-width: 800px)
+{
+    .project-container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .project
+        {
+            position: relative;
+            width: 48%;
+        }
     }
 }

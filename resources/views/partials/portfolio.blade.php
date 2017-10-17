@@ -8,13 +8,18 @@
         @if( ! empty($projects)) 
             @foreach($projects as $project)
                 <div class="project">
-                    <img src="http://placehold.it/350/" alt="">
-                    <div class="content">
-                        <h3 class="title">{{ $project->title }}</h3>
-                        <h4 class="description">{{ $project->description }}</h4>
-                        <p><b>What I Did: </b>{{ $project->technologies }}</p>
-                        <a href="{{ $project->url }}" target="_new" class="btn">View Project</a>
-                    </div>
+                     <a href="{{ $project->url }}" target="_new">
+                        <div class="project-thumb">
+                            <img src="/images/project-screenshots/{{ $project->img_file }}" alt="{{ $project->title }}" />
+                            <div class="project-thumb-hover">
+                                 <span href="{{ $project->url }}" target="_new" class="btn">View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="title">{{ $project->title }}</h3>
+                    <h4 class="description">{{ $project->description }}</h4>
+                    <p><b>What I Did: </b>{{ $project->technologies }}</p>
+                    <a href="{{ $project->url }}" target="_new" class="btn">View Project</a>
                 </div>
                 {{-- var_dump($project) --}}
             @endforeach
