@@ -9,5 +9,7 @@
     </div>    
 </section>
 
+@include('partials/portfolio')
+
 
 @endsection

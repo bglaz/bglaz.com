@@ -12,7 +12,7 @@
         {{--  <link rel="apple-touch-icon" href="icon.png">  --}}
         <!-- Place favicon.ico in the root directory -->
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather" rel="stylesheet">
         <script src="https://use.fontawesome.com/066baa518b.js"></script>
         <link rel="stylesheet" href="css/all.css">
     </head>

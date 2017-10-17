@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Project;
 
 class MainController extends Controller
 {
@@ -13,6 +14,9 @@ class MainController extends Controller
      */
     public function index()
     {
-        return view('home', []);
+        //Get the projects for the portfolio
+        $projects = Project::orderBy('sort')->get();
+
+        return view('home', compact('projects'));
     }
 }
