@@ -2,6 +2,7 @@
 
     <div class="container">
         <h2 class="center"><i class="fa fa-folder-open-o"></i>Portfolio</h1>
+         <h4 class="center">A sample of my professional work</h3>
     </div>
 
     <div class="container project-container">

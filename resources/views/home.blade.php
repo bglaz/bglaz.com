@@ -10,6 +10,7 @@
 </section>
 
 @include('partials/portfolio')
+@include('partials/code-lab')
 
 
 @endsection

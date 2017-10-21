@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Project;
+use App\CodepenProject;
 
 class MainController extends Controller
 {
@@ -17,6 +18,10 @@ class MainController extends Controller
         //Get the projects for the portfolio
         $projects = Project::orderBy('sort')->get();
 
-        return view('home', compact('projects'));
+        //Get the codepen projects
+        $codepen_projects = CodepenProject::orderBy('sort')->get();
+       
+
+        return view('home', compact('projects', 'codepen_projects'));
     }
 }
