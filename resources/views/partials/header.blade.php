@@ -4,13 +4,13 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="#about"><span class="fa fa-address-card-o"></span>About</a>
+                    <a data-anchor-link href="#about"><span class="fa fa-address-card-o"></span>About</a>
                 </li>
                 <li>
-                    <a href="#portfolio"><span class="fa fa-folder-open-o"></span>Portfolio</a>
+                    <a data-anchor-link href="#portfolio"><span class="fa fa-folder-open-o"></span>Portfolio</a>
                 </li>
                 <li>
-                    <a href="#code-lab"><span class="fa fa-code"></span>Code Lab</a>
+                    <a data-anchor-link href="#code-lab"><span class="fa fa-code"></span>Code Lab</a>
                 </li>
             </ul>
             <div id="hamburger"></div>
