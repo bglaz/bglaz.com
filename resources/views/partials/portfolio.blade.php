@@ -19,9 +19,11 @@
                     <h3 class="title">{{ $project->title }}</h3>
                     <h4 class="description">{{ $project->description }}</h4>
                     <p><b>What I Did: </b>{{ $project->technologies }}</p>
+                    @if( ! empty($project->notes) )
+                        <p class="small">{{ $project->notes }}</p>
+                    @endif
                     <a href="{{ $project->url }}" target="_new" class="btn">View Project</a>
                 </div>
-                {{-- var_dump($project) --}}
             @endforeach
         @endif
     </div>
