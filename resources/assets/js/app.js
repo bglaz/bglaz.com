@@ -1,10 +1,12 @@
 "use strict";
 const mobileMenu = require('./modules/mobileMenu.js');
 const anchorLinks = require('./modules/anchorLinks.js');
+const activeNav = require('./modules/activeNav.js');
 
 const modules = {
     mobileMenu,
-    anchorLinks
+    anchorLinks,
+    activeNav
 };
 
 (function() {
