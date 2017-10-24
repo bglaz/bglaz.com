@@ -1,0 +1,38 @@
+#about
+{
+    .about-content
+    {
+        img
+        {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media all and(min-width: 800px)
+{
+    #about
+    {
+        .about-content
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .image-holder
+            {
+                flex: 3;
+                margin-right: 2rem;
+
+                img
+                {
+                    border: 1px solid #CCC;
+                }
+            }
+
+            .text-content
+            {
+                flex: 5;
+            }
+        }
+    }
+}

@@ -9,6 +9,7 @@
     </div>    
 </section>
 
+@include('partials/about')
 @include('partials/portfolio')
 @include('partials/code-lab')
 
