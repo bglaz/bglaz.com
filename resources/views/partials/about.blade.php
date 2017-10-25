@@ -8,8 +8,8 @@
         </div>
         <div class="text-content">
             <p>
-                I am a full-stack developer graduating with a degree in Interactive Multimedia from The College of New Jersey. 
-                I have {{ date('Y') - 2009 }} years of industry including developing responsive websites, HTML emails, and back-end APIs.
+                I am a full-stack developer graduating with a B.A. in Interactive Multimedia from The College of New Jersey. 
+                I have {{ date('Y') - 2009 }} years of industry experience including developing responsive websites, HTML emails, and back-end APIs.
             </p>
             <p>
                 When I'm not coding, I enjoy various activities such as playing ultimate frisbee, board games, and snowboarding.
