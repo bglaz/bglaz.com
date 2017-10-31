@@ -8,7 +8,7 @@
         </div>
         <div class="text-content">
             <p>
-                I am a full-stack developer graduating with a B.A. in Interactive Multimedia from The College of New Jersey. 
+                I am a full-stack developer with a B.A. in Interactive Multimedia from The College of New Jersey. 
                 I have {{ date('Y') - 2009 }} years of industry experience including developing responsive websites, HTML emails, and back-end APIs.
             </p>
             <p>
