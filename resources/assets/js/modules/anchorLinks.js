@@ -5,12 +5,13 @@ const $menu = document.getElementById('menu'),
 const init = () => {
     $menu.addEventListener('click', function(e) {
         e.preventDefault();
-        const $target = e.target;
+        const $target = e.target
         if($target.hasAttribute('data-anchor-link'))
         {
             const linkTo = document.querySelector( $target.getAttribute('href') );
             linkTo.scrollIntoView();
-            document.documentElement.scrollTop -= $header.clientHeight;
+            const  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            document.documentElement.scrollTop = document.body.scrollTop = ( scrollTop - $header.clientHeight );
             $menu.classList.remove('open');
             $hamburger.classList.remove('open');
         }
