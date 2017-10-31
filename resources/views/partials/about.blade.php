@@ -15,7 +15,7 @@
                 When I'm not coding, I enjoy various activities such as playing ultimate frisbee, board games, and snowboarding.
             </p>
             <p>
-                <a href="">Download résumé</a>
+                <a href="/docs/Brian-Glaz-Resume.doc">Download résumé</a>
             </p>
         </div>
     </div>
