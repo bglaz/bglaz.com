@@ -2,7 +2,7 @@
 
     <div class="container">
         <h2 class="center"><i class="fa fa-code"></i>Code Lab</h1>
-        <h4 class="center">A collection of code samples and expiriments</h3>
+        <h4 class="center">A collection of code samples and experiments</h3>
     </div>
 
     <div class="container project-container">
