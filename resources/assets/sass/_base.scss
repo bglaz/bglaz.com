@@ -1,129 +1,120 @@
-*
-{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html
-{
-    font: {
-        family: $base-font;
-        size: 0.85rem;
-    }
+html {
+  font: {
+    family: $base-font;
+    size: 0.85rem;
+  }
 
-    color: $color-font;
+  color: $color-font;
 
-    line-height: $base-line-height;
+  line-height: $base-line-height;
 }
 
-img
-{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font: {
-        family: $heading-font;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    family: $heading-font;
+  }
 
-    line-height: $heading-line-height;
+  line-height: $heading-line-height;
 }
 
-h1, h2, h3, h4 {
-    margin: 1.414rem 0 0.5rem;
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: bold;
 }
-  
+
 h1 {
-    font-size: 3.998rem;
+  font-size: 3.998rem;
 }
 
 h2 {
-    font-size: 2.827rem;
+  font-size: 2.827rem;
 }
 
-
 h3 {
-    font-size: 1.999rem;
+  font-size: 1.999rem;
 }
 
 h4 {
-    font-size: 1.414rem;
+  font-size: 1.414rem;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
 
-    &.large
-    {
-        @extend p;
-        font-size: 1.25rem;
-    }
+  &.large {
+    @extend p;
+    font-size: 1.25rem;
+  }
 
-    &.subhead
-    {
-        margin-top: -0.75rem;
-    }
+  &.subhead {
+    margin-top: -0.75rem;
+  }
 
-    &.small
-    {
-        font-size: 0.85rem;
-    }
+  &.small {
+    font-size: 0.85rem;
+  }
 
-    &:last-child
-    {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-a
-{
-    color: $color-blue-light;
-    transition: .3s color;
+a {
+  color: $color-blue-light;
+  transition: 0.3s color;
 
-    &:hover
-    {
-        color: $color-blue-dark;
-    }
+  &:hover {
+    color: $color-blue-dark;
+  }
 }
 
-main
-{
-    margin-top: $header-height;
+main {
+  margin-top: $header-height;
 }
 
 .container {
-    max-width: $container-width;
-    margin: 0 auto;
-    padding: 1.25rem;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 1.25rem;
 
-    &--full-width
-    {
-        @extend .container;
-        max-width: none;
-    }
+  &--full-width {
+    @extend .container;
+    max-width: none;
+  }
 
-    &--narrow
-    {
-        @extend .container;
-        max-width: $container-width-narrow;
-    }
+  &--narrow {
+    @extend .container;
+    max-width: $container-width-narrow;
+  }
 }
 
-.fa
-{
-    margin-right: 0.5rem;
+.fa {
+  margin-right: 0.5rem;
 }
 
-@media all and(min-width: $breakpoint-tablet)
-{
-    html
-    {
-        font-size: 1rem;
-    }
+@media all and (min-width: $breakpoint-tablet) {
+  html {
+    font-size: 1rem;
+  }
 
-    main
-    {
-        margin-top: $header-height-tablet;
-    }
+  main {
+    margin-top: $header-height-tablet;
+  }
 }

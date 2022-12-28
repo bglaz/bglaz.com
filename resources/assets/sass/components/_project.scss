@@ -1,64 +1,54 @@
-.project
-{
-    border: 1px solid #CCC;
-    border-radius: .25rem;
+.project {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
 
-    margin-bottom: 3rem;
-    padding: 1rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
 
-    .project-thumb
-    {
-        position: relative;
+  .project-thumb {
+    position: relative;
 
-        img
-        {
-            display: block;
-        }
-
-       .project-thumb-hover
-       {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background-color: rgba(0,0,0,0.5);
-           opacity: 0;
-
-           transition: opacity .3s;
-       }
-
-       &:hover
-       {
-           .project-thumb-hover
-           {
-               opacity: 1;
-           }
-       }
+    img {
+      display: block;
     }
 
-    .description
-    {
-        margin: 0 0 1.5rem 0;
+    .project-thumb-hover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+
+      transition: opacity 0.3s;
     }
+
+    &:hover {
+      .project-thumb-hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .description {
+    margin: 0 0 1.5rem 0;
+  }
 }
 
-@media all and(min-width: 800px)
-{
-    .project-container
-    {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+@media all and (min-width: 800px) {
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-        .project
-        {
-            position: relative;
-            width: 48%;
-        }
+    .project {
+      position: relative;
+      width: 48%;
     }
+  }
 }

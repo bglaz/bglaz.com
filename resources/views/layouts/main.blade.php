@@ -14,7 +14,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather" rel="stylesheet">
         <script src="https://use.fontawesome.com/066baa518b.js"></script>
-        <link rel="stylesheet" href="css/all.css">
+        @vite(['node_modules/normalize.css/normalize.css', 'resources/assets/sass/app.scss', 'resources/assets/js/app.js'])
     </head>
     <body>
         @include('partials/header')
@@ -22,6 +22,5 @@
             @yield('content')
         </main>
         @include('partials/footer')
-        <script src="js/app.js"></script>
     </body>
 </html>
